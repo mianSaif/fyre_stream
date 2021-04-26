@@ -47,3 +47,7 @@ Route::get('delete_user','UserController@delete_user')->name('delete_user');
 Route::get('master', function () {
     return view('admin.layouts.master');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
