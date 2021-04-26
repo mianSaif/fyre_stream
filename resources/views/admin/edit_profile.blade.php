@@ -78,7 +78,7 @@
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#account" role="tab"
-                                           aria-controls="home" aria-selected="true">Account</a>
+                                           aria-controls="account" aria-selected="true">Account</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -86,23 +86,23 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#privacy" role="tab"
-                                           aria-controls="contact" aria-selected="false">Privacy</a>
+                                           aria-controls="privacy" aria-selected="false">Privacy</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#security" role="tab"
-                                           aria-controls="contact" aria-selected="false">Security</a>
+                                           aria-controls="security" aria-selected="false">Security</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#membership" role="tab"
-                                           aria-controls="contact" aria-selected="false">Membership</a>
+                                           aria-controls="membership" aria-selected="false">Membership</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" id="contact-tab" data-toggle="tab" href="#extra" role="tab"
-                                           aria-controls="contact" aria-selected="false">Extra</a>
+                                           aria-controls="extra" aria-selected="false">Extra</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="tab-pane fade show active" id="account" role="tabpanel" aria-labelledby="account-tab">
                                         <div class="row mt-4">
                                             <div class="col-md-3">Verified User</div>
                                             <div class="col-md-9">
@@ -185,7 +185,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -431,13 +431,58 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="contact-tab">
-                                    Vestibulum imperdiet odio sed neque ultricies, ut dapibus mi maximus. Proin ligula massa,
-                                    gravida in lacinia efficitur, hendrerit eget mauris. Pellentesque fermentum, sem interdum
-                                    molestie finibus, nulla diam varius leo, nec varius lectus elit id dolor. Nam malesuada orci non
-                                    ornare vulputate. Ut ut sollicitudin magna. Vestibulum eget ligula ut ipsum venenatis ultrices.
-                                    Proin bibendum bibendum augue ut luctus.
+                                    <div class="tab-pane fade" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+                                        Privacy
+                                    </div>
+                                    <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-hover" id="save-stage" style="width:100%;">
+                                                <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>BROWSER</th>
+                                                    <th>OS</th>
+                                                    <th>DATE</th>
+                                                    <th>IP</th>
+                                                    <th>ACTIONS</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>System Architect</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>61</td>
+                                                    <td>2011/04/25</td>
+                                                    <td>$320,800</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="membership" role="tabpanel" aria-labelledby="membership-tab">
+                                       <div class="row mt-4">
+                                           <div class="col-md-12">
+                                               <h6>UPGRADE PACKAGE</h6>
+                                           </div>
+                                           <div class="col-md-3">Select Package</div>
+                                           <div class="col-md-9">
+                                               <div class="form-group">
+                                                   <select class="form-control">
+                                                       <option>Option 1</option>
+                                                       <option>Option 2</option>
+                                                       <option>Option 3</option>
+                                                   </select>
+                                               </div>
+                                               <div class="buttons">
+                                                   <a href="#" class="btn btn-primary">Save Changes</a>
+                                               </div>
+                                           </div>
+                                       </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="extra" role="tabpanel" aria-labelledby="extra-tab">
+                                        Extra
+                                    </div>
                                 </div>
                             </div>
                         </div>
