@@ -40,3 +40,6 @@ Route::get('users_list', function () {
 Route::get('edit_profile', function () {
     return view('admin.edit_profile');
 });
+Route::get('master', function () {
+    return view('admin.layouts.master');
+});
