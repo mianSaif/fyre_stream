@@ -35,12 +35,13 @@
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-5 col-md-6 mt-4 mt-md-0">
           <div class="form-sec">
-            <form action="#">
+            <form action="{{route('login_user')}}" method="POST">
+                @csrf
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Username or Email " required>
+                <input name="emal" type="text" class="form-control" placeholder="Email " required>
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" placeholder=" Password " required>
+                <input name="password" type="password" class="form-control" placeholder=" Password " required>
               </div>
               <button type="submit" class="sub-btn"> Sign In </button>
             </form>

@@ -17,6 +17,9 @@ Route::get('/', function () {
 Route::get('login_user', function () {
     return view('website.login');
 });
+
+Route::post('login_user','UserController@getLoginCredentials')->name('login_user');
+
 Route::get('sign_up', function () {
     return view('website.register');
 });
