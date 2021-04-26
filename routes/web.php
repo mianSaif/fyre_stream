@@ -54,3 +54,22 @@ Route::get('master', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+// wa
+
+Route::get('/add-role','HomeController@add_role');
+
+Auth::routes();
+
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+    Route::resource('products','ProductController');
+});
+
+Route::get('/role-list','RoleController@index');
