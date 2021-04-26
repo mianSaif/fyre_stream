@@ -1,0 +1,229 @@
+.vjs-poster{
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 50% 50% !important;
+    background-size: contain;
+    background-color: black !important;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+}
+ul.custom-friends li{
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 5px;
+}
+ul.custom-friends li a{
+    font-size: 16px;
+    font-weight: 500;
+}
+.width-10{
+    width: 10px;
+}
+.width-20{
+    width: 20px;
+}
+.width-40{
+    width: 40px;
+}
+.width-50{
+    width: 50px;
+}
+.width-60{
+    width: 60px;
+}
+.width-70{
+    width: 70px;
+}
+.width-80{
+    width: 80px;
+}
+.width-90{
+    width: 90px;
+}
+.width-100{
+    width: 100px;
+}
+.classifieds .cross{
+    position: relative;
+}
+.price-div{
+    position: absolute;
+    bottom: 0px;
+    top: 3em;
+    color: white;
+    left: 1em;
+}
+ul.list-inline li.list-inline-item.active{
+    border-bottom: 1px solid #e05149;
+}
+ul.list-inline li.list-inline-item.active a{
+    color: #e05149;
+}
+.modal-content .modal-header{
+    /*background: #e05149;*/
+    color: white;
+}
+.dropdown-menu.dropdown-menu-right.dropdown-widget.with-arrow.show{
+    padding: 0;
+}
+.dropdown-widget-header span{
+    font-size: 1rem !important;
+    color: white !important;
+}
+span.name.js_user-popover{
+    margin-left: 10px;
+}
+.dropdown-menu{
+    padding: 0px !important;
+}
+.textBoldDiv .post-text{
+    font-size: 20px;
+    font-weight: 600;
+}
+.watched-slider .slides-part .mySlides .overflow-hidden{
+    height: 170px;
+}
+.pg_wrapper .pg_1x {
+    //height: 270px;
+    overflow: hidden;
+}
+.pg_wrapper .pg_1x img {
+    //height: 100%;
+}
+.btn.btn-sm.btn-success{
+    background-image: linear-gradient(#ff6961, #ffa500f7);
+    border-color: #ff6961;
+}
+.nav-pills .nav-link.active{
+    color: #fff;
+    /*background-color: #007bff;*/
+    background-image: linear-gradient(#ff6961, #ffa500f7) !important;
+}
+.btn.btn-primary{
+    background-image: linear-gradient(#ff6961, #ffa500f7);
+    border-color: #ff6961;
+}
+.dropdown-menu.py-0.rounded.border-0.position-absolute.show ul li a.data-avatar img{
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 6px;
+}
+.dropdown-widget-body.custom-scrollbar ul li a .data-avatar img{
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: 6px;
+}
+.height-350px{
+    height: 350px;
+}
+span.name.js_user-popover{
+    font-size: 16px;
+}
+.x-hidden{
+    display: none;
+}
+
+/*.storysCutomDiv{
+    display: none;
+}
+.storysCutomDiv.active{
+    display: block;
+}*/
+.x-form.chat-form ul.x-form-tools li i{
+    //color: #ff6961;
+}
+li.x-form-tools-colors.js_chat-colors-menu-toggle.js_chat-color-me.x-hidden i{
+    display: none;
+}
+i.js_chat-box-close{
+    cursor: pointer;
+}
+.margin-bottom-1em{
+    margin-bottom: 1.5em;
+}
+.message-header-icon:hover{
+    //background: darkgray;
+    background-color: #fff;
+}
+.btn-info{
+    background: #ff6961 !important;
+    border: 1px solid #ff6961 !important;
+}
+
+.btn-info:hover{
+    background: #ff6961;
+    border: 1px solid #ff6961;
+}
+.post-text.js_readmore a{
+    color: #007bff;
+}
+.data-container.small .data-avatar img{
+    width: 45px;
+    height: 45px;
+}
+.message-header-icon{
+    border-radius: 50%;
+    //border: 1px solid #dcd9d9;
+    padding: 5px;
+    top: 1px;
+    position: relative;
+    cursor: pointer;
+}
+.modal-dialog.modal-dialog-centered .modal-content.create-post-box{
+    width: 100% !important;
+}
+.suggested-group-custom{
+    text-align: center;
+    position: relative;
+    top: 22px;
+    left: 3em;
+    background: #f0f4f8;
+    overflow: hidden;
+    width: 55%;
+}
+.header-top .navbar-nav .nav-item .nav-link .notify:hover{
+    background: red;
+}
+.js_wizard-content span.js_user-popover{
+    color:#de4150;
+}
+// /////   new changing timeline
+.data-container.clickable.small.js_chat-start{
+    width: 60% !important;
+    margin: 0 auto;
+}
+.data-container.clickable.small.js_chat-start .data-content{
+    padding-left: 0px;
+}
+.dropdownMenuCustom{
+    padding: 5px !important;
+    background: #fff;
+    top: 3.5em;
+    min-width: 17rem;
+}
+.profile-dropdown .get-credits .beta {
+    position: absolute;
+    bottom: -20px;
+    font-size: 12px;
+    left: 37%;
+    color: #3C5BC8;
+}
+
+// .profile-dropdown .bg-white :first-child {
+//   padding: 0 !important;
+// }
+.bg-white a button{
+    color: #b5b4b4;
+}
+ul.right-menu-to-hide.right-bar-buttons.text-center.md-0 li{
+    margin-bottom: 12px;
+}

@@ -1,0 +1,36 @@
+body,.right-menu,.left-menu {
+    background-color: #F2F2F2;
+}
+
+.header-top .navbar-nav .nav-item .nav-link {
+    border-radius: 50%;
+    /*border: .5px solid #e2e2e2;*/
+    transition: .2s;
+}
+
+.header-top .navbar-nav .nav-item .nav-link:hover {
+    /*background-color: #D0CECE;*/
+    background-color: #fff;
+}
+
+.header-top {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.most-watched-list {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.most-watched-post p {
+    margin: 2px 3px 5px;
+    font-size: 12px;
+}
+
+.bg-thumbnail {
+    width: 100%;
+    height: 100px;
+    background: url("../images/video8.png") center no-repeat;
+    background-size: cover;
+    margin-bottom: 5px;
+}
