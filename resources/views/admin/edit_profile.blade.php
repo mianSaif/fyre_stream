@@ -190,49 +190,48 @@
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="password">First Name</label>
-                                                    <input type="text" class="form-control">
+                                                    <input name="first_name" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="password">Last Name</label>
-                                                    <input type="text" class="form-control">
+                                                    <input name="last_name" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="password">I AM</label>
                                                     <select class="form-control">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
+                                                        <option value="Male">Male</option>
+                                                        <option value="Female">Female</option>
+                                                        <option value="Other">Other</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
-                                                    <label for="password">Relationship Status</label>
-                                                    <select class="form-control">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
+                                                    <label for="relationship">Relationship Status</label>
+                                                    <select name="martial_status" class="form-control">
+                                                        <option value="Single">Single</option>
+                                                        <option value="Married">Married</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="password">Country</label>
-                                                    <select class="form-control">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
+                                                    <select name="country" class="form-control">
+                                                        <option value="us">United Stats</option>
+                                                        <option  value="cn">Cananda</option>
+                                                        <option value="as">Australia</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="password">Website</label>
-                                                    <input type="text" class="form-control">
+                                                    <input name="website" type="text" class="form-control">
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -241,7 +240,7 @@
                                                         <div class="form-group">
                                                             <label for="password">Birth Day</label>
                                                             <select class="form-control">
-                                                                <option>Option 1</option>
+                                                                <option>Select Month</option>
                                                                 <option>Option 2</option>
                                                                 <option>Option 3</option>
                                                             </select>
@@ -249,9 +248,9 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label for="password">Birth Day</label>
+                                                            <label for="password">Select Day</label>
                                                             <select class="form-control">
-                                                                <option>Option 1</option>
+                                                                <option>Select Day</option>
                                                                 <option>Option 2</option>
                                                                 <option>Option 3</option>
                                                             </select>
@@ -259,9 +258,9 @@
                                                     </div>
                                                     <div class="col-md-4">
                                                         <div class="form-group">
-                                                            <label for="password">Birth Day</label>
+                                                            <label for="password">Select Year</label>
                                                             <select class="form-control">
-                                                                <option>Option 1</option>
+                                                                <option>Select Year</option>
                                                                 <option>Option 2</option>
                                                                 <option>Option 3</option>
                                                             </select>
@@ -272,7 +271,7 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label for="">About me</label>
-                                                    <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                                                    <textarea name="about_me" class="form-control" name="" id="" cols="30" rows="10"></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-md-12">
@@ -341,7 +340,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="fb_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -354,7 +353,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="tw_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -367,7 +366,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="yt_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,7 +379,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="ig_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -393,7 +392,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="lnk_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -406,7 +405,7 @@
                                                                 <i class="fas fa-phone"></i>
                                                             </div>
                                                         </div>
-                                                        <input type="text" class="form-control phone-number">
+                                                        <input name="vkt_url" type="text" class="form-control phone-number">
                                                     </div>
                                                 </div>
                                             </div>
@@ -416,10 +415,10 @@
                                             <div class="col-md-12">
                                                 <div class="form-group">
                                                     <label>Sample Custom Field</label>
-                                                    <select class="form-control">
-                                                        <option>Option 1</option>
-                                                        <option>Option 2</option>
-                                                        <option>Option 3</option>
+                                                    <select name="sample_field" class="form-control">
+                                                        <option value="Sample Custom Field 1">Sample Custom Field 1</option>
+                                                        <option value="Sample Custom Field 2">Sample Custom Field 1</option>
+                                                        <option value="Sample Custom Field 3">Sample Custom Field 1</option>
                                                     </select>
                                                 </div>
                                             </div>

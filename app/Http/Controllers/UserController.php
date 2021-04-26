@@ -68,4 +68,20 @@ class UserController extends Controller
         $user->save();
         return redirect('login_user');
     }
+    public function users_list() {
+        $users = User::get();
+        return view('admin.users_list', ["users" => $users]);
+    }
+
+    public function edit_user(Request $request) {
+        return $request->all();
+        $users = User::get();
+        return view('admin.users_list', ["users" => $users]);
+    }
+
+    public function delete_user() {
+        $users = User::get();
+        return view('admin.users_list', ["users" => $users]);
+    }
+
 }

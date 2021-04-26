@@ -34,12 +34,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('admin', function () {
     return view('admin.index');
 });
-Route::get('users_list', function () {
-    return view('admin.users_list');
-});
-Route::get('edit_profile', function () {
+// show users
+Route::get('users_list','UserController@users_list');
+
+//Edit user
+Route::get('edit_user',function (){
     return view('admin.edit_profile');
-});
+})->name('edit_user');
+
+//Delete user
+Route::get('delete_user','UserController@delete_user')->name('delete_user');
 Route::get('master', function () {
     return view('admin.layouts.master');
 });

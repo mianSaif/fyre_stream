@@ -27,7 +27,7 @@
             <li class="dropdown">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i class="fas fa-user-alt"></i><span>Users</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="alert.html">List Users</a></li>
+                    <li><a class="nav-link" href="{{url('users_list')}}">List Users</a></li>
                 </ul>
             </li>
         </ul>
