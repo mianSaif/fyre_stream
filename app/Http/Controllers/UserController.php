@@ -38,6 +38,7 @@ class UserController extends Controller
     }
     public function login($email,$password) {
 
+
 //        return $password = bcrypt($request->password);
 
         if (Auth::attempt(['email' => $email,'password' => $password])) {
@@ -51,6 +52,11 @@ class UserController extends Controller
                 'status' => false
             ]);
         }
+    }
+    public function getLoginCredentials(Request $request) {
+         $this->login($request->email,$request->password);
+            return redirect('/');
+
     }
     public function update_user(Request $request) {
         $user_id = Auth::user()->id;
@@ -82,6 +88,6 @@ class UserController extends Controller
     public function delete_user() {
         $users = User::get();
         return view('admin.users_list', ["users" => $users]);
-    }
+    };
 
 }

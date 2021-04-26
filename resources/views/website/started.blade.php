@@ -159,13 +159,13 @@
                         <div class="btn-group"> <span type="button" style="color: black;"
                                                       class=" dropdown-toggle font-weight-bolder" data-toggle="dropdown"
                                                       aria-haspopup="true" aria-expanded="false">
-                                Bismaat  <img
+                                {{Auth::user()->last_name}}  <img
                                     src="http://fyrestream.com//content/themes/default/images/blank_profile_male.jpg"
                                     style="    width: 40px; height: 40px;   border-radius: 50%;" alt="profile2"
                                     class="ml-2"> </span>
                             <div
                                 class="dropdown-menu dropdown-menu-right bg-black dropdownMenuCustom profile-dropdown ">
-                                <div class="text-left pl10 "><h4>Bismaat</h4></div>
+                                <div class="text-left pl10 "><h4>{{Auth::user()->last_name}} </h4></div>
                                 <div class="bg-white pt10"><a href="http://fyrestream.com//bismaat395">
                                         <button class="dropdown-item" type="button"><i class="fa fa-user"></i>
                                             My Profile
@@ -343,7 +343,7 @@
             <div class="col-12 col-md-10 mx-md-auto">
                 <div class="card shadow">
                     <div class="card-body">
-                        <form method="POST" class="js_ajax-forms" action="{{url('update_user')}}">
+                        <form method="POST" class="js_ajax-forms" action="{{url('update_user')}}" enctype="multipart/form-data">
                             @csrf
                         <ul class="nav nav-pills nav-fill nav-started mb30 js_wizard-steps">
                             <li class="nav-item"><a class="nav-link active" href="#step-1"><p class="mb0">Upload your
@@ -355,7 +355,7 @@
                         </ul>
                         <div class="js_wizard-content" id="step-1">
                             <div class="text-center" style="color: #e04e5c;"><h3 class="mb5">Welcome <span
-                                        class="text-primary">Bismaat</span></h3>
+                                        class="text-primary">{{Auth::user()->last_name}} </span></h3>
                                 <p class="mb20">Let's start with your photo</p></div>
                             <div class="position-relative" style="height: 170px;">
                                 <div class="profile-avatar-wrapper static"><img
