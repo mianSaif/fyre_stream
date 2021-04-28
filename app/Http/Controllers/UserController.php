@@ -54,9 +54,13 @@ class UserController extends Controller
         }
     }
     public function getLoginCredentials(Request $request) {
-         $this->login($request->email,$request->password);
-            return redirect('/');
+        $abc = $this->login($request->email,$request->password);
+        if($abc->getData()->msg == 'Incorrect Login Detail'){
+            session()->flash('delete', 'Wrong Email / Password!!!');
+            return back();
+        }
 
+        return redirect('/');
     }
     public function update_user(Request $request) {
         $user_id = Auth::user()->id;
@@ -88,6 +92,6 @@ class UserController extends Controller
     public function delete_user() {
         $users = User::get();
         return view('admin.users_list', ["users" => $users]);
-    };
+    }
 
 }

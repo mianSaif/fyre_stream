@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+
 Route::get('login_user', function () {
     return view('website.login');
 });
@@ -70,6 +69,15 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
     Route::resource('users','UserController');
     Route::resource('products','ProductController');
+
+    Route::get('/', 'TimelinePostController@index')->name('timelinepost.index');
+    Route::post('/timelinepost','TimelinePostController@store')->name('timelinepost.store');
+
+    Route::post('/comment/{id}','TimelinePostController@storeComment')->name('timelinepost.storeComment');
+    Route::delete('/comment/{comment}','TimelinePostController@destroyComment')->name('timelinepost.deleteComment');
+    
+    
 });
+
 
 Route::get('/role-list','RoleController@index');

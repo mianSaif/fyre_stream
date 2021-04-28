@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+  <script src="{{asset('assets/js/jquery.min.js')}}"></script>
+  <script src="{{asset('assets/js/popper.min.js')}}"></script>
+  <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
   <!-- Custom CSS -->
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 
@@ -35,10 +38,16 @@
         </div><!-- /.col-lg-6 -->
         <div class="col-lg-5 col-md-6 mt-4 mt-md-0">
           <div class="form-sec">
+            @if(session()->has('delete'))
+              <div class="alert alert-danger alert-dismissible fade show">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>{{session()->get('delete')}}</strong>
+              </div>
+            @endif
             <form action="{{route('login_user')}}" method="POST">
                 @csrf
               <div class="form-group">
-                <input name="emal" type="text" class="form-control" placeholder="Email " required>
+                <input name="email" type="text" class="form-control" placeholder="Email " required>
               </div>
               <div class="form-group">
                 <input name="password" type="password" class="form-control" placeholder=" Password " required>
@@ -89,6 +98,15 @@
       </p><!-- /.copy-text -->
     </div><!-- /.container -->
   </footer><!-- /.footer -->
+
+  <script>
+        $(document).ready(function() {
+            // show the alert
+            setTimeout(function() {
+                $(".alert").alert('close');
+            }, 2000);
+        });
+    </script>
 
 </body>
 </html>

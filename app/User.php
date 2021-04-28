@@ -37,4 +37,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function timelineposts(){
+        return $this->hasMany(TimelinePost::class);
+    }
+
+    public function comments(){
+        return $this->hasMany(Comment::class);
+    }
 }
