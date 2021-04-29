@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/reaction/style.css')}}" />
+{{--    <link rel="stylesheet" type="text/css" href="{{asset('assets/css/reaction/style.css')}}" />--}}
     <!-- Css for reaction system -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/reaction/reaction.css')}}" />
 
