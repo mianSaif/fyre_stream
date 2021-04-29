@@ -20,7 +20,8 @@ class CreateTimelinePostsTable extends Migration
             $table->text('image')->nullable();
             $table->text('feeling')->nullable();
             $table->unsignedBigInteger('like')->nullable()->default(0);
-            $table->unsignedInteger('user_id');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

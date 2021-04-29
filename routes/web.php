@@ -72,11 +72,14 @@ Route::group(['middleware' => ['auth']], function() {
 
     Route::get('/', 'TimelinePostController@index')->name('timelinepost.index');
     Route::post('/timelinepost','TimelinePostController@store')->name('timelinepost.store');
+    Route::patch('/timelinepost/{timelinePost}','TimelinePostController@update')->name('timelinepost.updatePost');
+    Route::delete('/timelinepost/{timelinePost}','TimelinePostController@destroy')->name('timelinepost.deletePost');
 
     Route::post('/comment/{id}','TimelinePostController@storeComment')->name('timelinepost.storeComment');
+    Route::patch('/comment/{comment}','TimelinePostController@updateComment')->name('timelinepost.updateComment');
     Route::delete('/comment/{comment}','TimelinePostController@destroyComment')->name('timelinepost.deleteComment');
-    
-    
+
+
 });
 
 

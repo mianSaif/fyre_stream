@@ -26,6 +26,17 @@ class TimelinePostController extends Controller
 
     }
 
+    public function update(TimelinePost $timelinePost, Request $request){
+        $timelinePost->post = $request->input('post');
+        $timelinePost->update();
+        return back();
+    }
+
+    public function destroy(TimelinePost $timelinePost){
+        $timelinePost->delete();
+        return back();
+    }
+
     public function storeComment(Request $request, $id){
         $comment = new Comment();
         $comment->comment = $request->input('comment');
@@ -34,6 +45,12 @@ class TimelinePostController extends Controller
         $comment->save();
         return back();
 
+    }
+
+    public function updateComment(Comment $comment, Request $request){
+        $comment->comment = $request->input('comment');
+        $comment->update();
+        return back();
     }
 
     public function destroyComment(Comment $comment){
