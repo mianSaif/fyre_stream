@@ -287,7 +287,7 @@
                         <div class="col">
                             <span class="reaction-btn"> <!-- Default like button -->
                                 <span class="reaction-btn-emo like-btn-default"></span> <!-- Default like button emotion-->
-                                <span class="reaction-btn-text-wow">Like</span> <!-- Default like button text,(Like, wow, sad..) default:Like  -->
+                                <span class="reaction-btn-text">Like</span> <!-- Default like button text,(Like, wow, sad..) default:Like  -->
                                 <ul class="emojies-box"> <!-- Reaction buttons container-->
                                     <li class="emoji emo-like" data-reaction="Like"></li>
                                     <li class="emoji emo-love" data-reaction="Love"></li>
