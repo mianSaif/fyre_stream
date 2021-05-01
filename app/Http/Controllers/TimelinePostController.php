@@ -57,4 +57,8 @@ class TimelinePostController extends Controller
         $comment->delete();
         return back();
     }
+
+    public function profile(){
+        return view('website.myprofile');
+    }
 }

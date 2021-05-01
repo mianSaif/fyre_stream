@@ -79,6 +79,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::patch('/comment/{comment}','TimelinePostController@updateComment')->name('timelinepost.updateComment');
     Route::delete('/comment/{comment}','TimelinePostController@destroyComment')->name('timelinepost.deleteComment');
 
+    Route::get('/profile', 'TimelinePostController@profile')->name('user.profile');
 
 });
 

@@ -1,191 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
-        <div class="col-1">
-            <aside class="col-lg-1 left-bar-to-shrink col-sm-2 pl-0">
-                <div class="post-left post-left-only d-none d-sm-block position-fixed">
-                    <div class="left-menu h-100">
-                        <ul class="two mb-0" style="">
-                            <li style="">
-                                <a href="http://fyrestream.com//videos" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/videos-red.png" class="hover-img">
-                                    <div class="tooltip">Videos</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//people" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-06.png" class="hover-img">
-                                    <div class="tooltip">People</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//market" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-05.png" class="hover-img">
-                                    <div class="tooltip">Marketplace</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/entertainment-red.png" class="hover-img">
-                                    <div class="tooltip">Entertainment</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/group_channels-red.png" class="hover-img">
-                                    <div class="tooltip">Events</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/discover_members-red.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-11.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-08.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-14.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-12.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://fyrestream.com//groups" class="mySidebar-toggoler">
-                                    <img src="http://fyrestream.com//content/themes/default/frontend/images/sidebar/cruzinabove 3-03.png" class="hover-img">
-                                    <div class="tooltip">Groups</div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="create-tab">
-                                    <i class="fas fa-plus-circle"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="create-container position-fixed border py-2">
-                        <h3 class="text-dark pl-2">Create</h3>
-                        <div class="create-items">
-                            <a href="http://fyrestream.com//groups" class="d-flex align-items-center p-2">
-                                <i class="fas fa-users rounded-circle bg-white text-center border"></i>
-                                <div class="ml-2">
-                                    <h5 class="mb-1">Group</h5>
-                                    <span>Connect with people</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="create-items">
-                            <a href="" class="d-flex align-items-center p-2">
-                                <i class="fas fa-store rounded-circle bg-white text-center border"></i>
-                                <div class="ml-2">
-                                    <h5 class="mb-1">Marketplace Listing</h5>
-                                    <span>Sell items to people</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal status-modal fade" id="createPostModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content border-0">
-                            <div class="modal-header border-0 p-0">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">×</span>
-                                </button>
-                            </div>
-                            <div class="modal-body pt-0">
-                                <div class="form-group w-100 position-relative">
-                                    <textarea class="form-control w-100 h-100 shadow-none m-0" placeholder="What do you want to share"></textarea>
-                                    <ul class="color-plate text-center list-inline mb-0 position-absolute">
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block active"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item mr-1 mb-3 mb-sm-0">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="d-inline-block"></a>
-                                        </li>
-                                    </ul>
-
-                                    <div class="user-icon rounded-circle overflow-hidden position-absolute">
-                                        <img class="w-100 h-100" src="http://fyrestream.com//content/themes/default/frontend/images/tanya.png" alt="tanya">
-                                    </div>
-                                </div>
-
-                                <div class="text-muted text-center font-weight-bold">Drag and drop image/video hera or
-                                    <a href="#" class="link">Browse</a>
-                                </div>
-                            </div>
-                            <div class="modal-footer align-items-center justify-content-center border-0 pt-0">
-                                <div>
-                                    <div class="input-group">
-                                        <select class="custom-select shadow-none">
-                                            <option selected="">Public Audience</option>
-                                            <option value="1">Personal</option>
-                                            <option value="2">Friends</option>
-                                            <option value="3">Custom</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="#" class="btn-tag rounded d-inline-block">Friend Tagging</a>
-                                    <a href="#" class="d-inline-block mx-3">
-                                        <img src="http://fyrestream.com//content/themes/default/frontend/images/camera3.png" alt="camera3">
-                                    </a>
-                                    <a href="#" class="btn-post d-inline-block text-white rounded" data-dismiss="modal" aria-label="Close">Post</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-        </div>
+    <div class="row ml-n5">
         <div class="col-2">
             <div class="p-3 bg-white rounded mb-3">
                 <div class="d-flex justify-content-center align-items-center">
@@ -214,7 +30,7 @@
         </div>
 
 
-        <div class="col mx-3">
+        <div class="col-5 ml-5">
             <div class="bg-white px-5 py-2 shadow">
                 <input type="text" placeholder="What do you want to share now, {{ Auth::user()->first_name }}?" class="form-control" style="border-radius: 30px;" readonly data-toggle="modal" data-target="#myModal">
             </div>
@@ -312,11 +128,11 @@
                             <img src="{{ asset('assets/img/dp.png') }}" alt="create post logo" class="img-fluid rounded-circle">
                         </div>
                         <div class="col mr-3">
-                            <form method="post" action="{{route('timelinepost.storeComment', ['id' => $a->id])}}">
+                            <form method="post" action="{{route('timelinepost.storeComment', ['id' => $a->id])}}" class="d-flex justify-content-center align-items-center">
                                 @csrf
-                                <input type="text" class="form-control" placeholder="Write a comment..." style="border-radius: 20px;" name="comment" id="comment{{$loop->iteration}}">
+                                <input type="text" class="form-control emojionearea1" placeholder="Write a comment..." style="border-radius: 20px;" name="comment" id="comment{{$loop->iteration}}">
                                 <input type="hidden" id="post_id" value="{{$a->id}}">
-                                <!-- <button class="btn">Post</button> -->
+                                <button class="btn btn-sm btn-light">Post</button>
                             </form>
                         </div>
                     </div>
@@ -404,7 +220,362 @@
             </div>
         </div>
 
-        <div class="col"></div>
+{{--        <div class="col">--}}
+            <div class="col third-column div-to-shrink d-flex flex-column js_sticky-sidebar" id="moments-sections" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                <div class="theiaStickySidebar" style="padding-top: 0; padding-bottom: 1px; position: static; transform: none; top: 0; left: 1260.36px;">
+                    <div class="rightSectionCustom">
+                        <div class="card" style="background:#F0F4F8; border:none;">
+                            <div class="card-top d-flex align-items-center p-2">
+                                <h5 class="mb-0 ml-2 text-dark">
+                                    <a href="#">
+                                        <i class="fas fa-plus-circle right-bar-add-circlr addMomentModal" data-url="posts/story.php?do=create" style="background: none;padding: 0;font-size: 16px;"></i>
+                                        Moments
+                                    </a>
+                                </h5>
+                                <div class="div-right" style="position: absolute;right: 8px;top: 12px;">
+                                    <a href="javascript:void(0);" class="setting-icon" style="font-size: 12px;">
+                                        <i class="fas fa-ellipsis-h"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 col-6 px-1 addMomentModal" data-url="posts/story.php?do=create" style="max-width: 120px">
+                                        <div class="default-moment-box overflow-hidden position-relative text-center text-white" style="height: 195px">
+                                            <i class="fas fa-plus right-bar-add-circlr"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 col-6 px-1 addMomentModal" data-url="posts/story.php?do=create" style="max-width: 120px">
+                                        <div class="default-moment-box overflow-hidden position-relative text-center text-white" style="height: 195px">
+                                            <i class="fas fa-plus right-bar-add-circlr"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 col-6 px-1 addMomentModal" data-url="posts/story.php?do=create" style="max-width: 120px">
+                                        <div class="default-moment-box overflow-hidden position-relative text-center text-white" style="height: 195px">
+                                            <i class="fas fa-plus right-bar-add-circlr"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card news-card">
+                            <div class="card-top d-flex align-items-center justify-content-between p-2" style="background: white;margin-bottom: 10px;">
+                                <div class="d-flex align-items-center">
+                                    <h5 class="mb-0 ml-2 text-dark">Most Watched</h5>
+                                </div>
+
+                                <div>
+                                    <a href="#" class="setting-icon">
+                                        <i class="fas fa-cog"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="most-viewed-list-scroll">
+                                <div class="most-watched-post">
+                                    <div class="row w-100">
+                                        <div class="col-md-12">
+                                            <h6 class="p-3">
+                                                Most watched videos not here!
+                                            </h6>
+                                        </div>
+                                        <hr style="width: 100%;left: 15px;position: relative;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card news-card">
+                            <div class="card-top d-flex align-items-center justify-content-between p-2">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-search"></i>
+                                    <h5 class="mb-0 ml-2 text-dark">Market Classifieds</h5>
+                                </div>
+                            </div>
+
+                            <div class="container classifieds-parent">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <div class="classifieds">
+                                            <a href="" class="cross">
+                                                <img src="http://fyrestream.com//content/uploads/photos/2021/01/sngine_f1571491b96cb34425af4e690e8caf05.jpg" class="width-50" alt="mobsm">
+                                                <div class="price-div">
+                                                    <p style="background: #00000036; padding: 5px;">
+                                                        $25.00
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-sm-6 col-6">
+                                        <div class="classifieds">
+                                            <a href="" class="cross">
+                                                <img src="http://fyrestream.com//content/uploads/photos/2021/01/sngine_173c40cb3197d45e0b1d191dadb44b87.jpg" class="width-50" alt="mobsm">
+                                                <div class="price-div">
+                                                    <p style="background: #00000036; padding: 5px;">
+                                                        $10.00
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sideBarCustom">
+                            <div class="card">
+                                <div class="card-body with-list" style="padding-top: 0">
+                                    <ul class="custom-friends" style="height: 70px; overflow: hidden">
+                                        <li class="feeds-item" style="position: relative" id="friendRequestBox5">
+                                            <i class="fas fa-times-circle follow-close-btn" data-uidremove="5"></i>
+                                            <div class="data-container small">
+                                                <a class="data-avatar" href="http://fyrestream.com//mubarakali">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_57b692210ce9e3cdaf8662b921bb4ee8_cropped.png" alt="Mubarak Ali">
+                                                </a>
+
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-success js_friend-add" data-uid="5">
+                                                            <i class="fa fa-user-plus mr5"></i>Add
+                                                        </button>
+                                                    </div>
+                                                    <div class="mt5">
+                                                        <span class="name js_user-popover" data-uid="5">
+                                                            <a href="http://fyrestream.com//mubarakali">Mubarak Ali</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="feeds-item" style="position: relative" id="friendRequestBox16">
+                                            <i class="fas fa-times-circle follow-close-btn" data-uidremove="16"></i>
+                                            <div class="data-container small">
+                                                <a class="data-avatar" href="http://fyrestream.com//murtzaali">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_74464742fe2f5c097e076eb3287dcf0d_cropped.png" alt="Murtza Ali">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-success js_friend-add" data-uid="16">
+                                                            <i class="fa fa-user-plus mr5"></i>Add
+                                                        </button>
+                                                    </div>
+                                                    <div class="mt5">
+                                                        <span class="name js_user-popover" data-uid="16">
+                                                            <a href="http://fyrestream.com//murtzaali">Murtza Ali</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="feeds-item" style="position: relative" id="friendRequestBox11">
+                                            <i class="fas fa-times-circle follow-close-btn" data-uidremove="11"></i>
+                                            <div class="data-container small">
+                                                <a class="data-avatar" href="http://fyrestream.com//hiraasif">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_9e3aca91670c9cbbcf4918c339489eca_cropped.jpg" alt="Hira Asif">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-success js_friend-add" data-uid="11">
+                                                            <i class="fa fa-user-plus mr5"></i>Add
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="mt5">
+                                                        <span class="name js_user-popover" data-uid="11">
+                                                            <a href="http://fyrestream.com//hiraasif">Hira Asif</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="feeds-item" style="position: relative" id="friendRequestBox8">
+                                            <i class="fas fa-times-circle follow-close-btn" data-uidremove="8"></i>
+                                            <div class="data-container small">
+                                                <a class="data-avatar" href="http://fyrestream.com//danish404">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_11214d383a6f0b6419947cb2e6ef5dfb.jpg" alt="Mujahid Sra">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-success js_friend-add" data-uid="8">
+                                                            <i class="fa fa-user-plus mr5"></i>Add
+                                                        </button>
+                                                    </div>
+                                                    <div class="mt5">
+                                                        <span class="name js_user-popover" data-uid="8">
+                                                            <a href="http://fyrestream.com//danish404">Mujahid Sra</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="feeds-item" style="position: relative" id="friendRequestBox19">
+                                            <i class="fas fa-times-circle follow-close-btn" data-uidremove="19"></i>
+                                            <div class="data-container small">
+                                                <a class="data-avatar" href="http://fyrestream.com//toseefahmed">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_84d79faa9c83b860832919634df011b7_cropped.jpg" alt="Toseef Ahmed">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-success js_friend-add" data-uid="19">
+                                                            <i class="fa fa-user-plus mr5"></i>Add
+                                                        </button>
+                                                    </div>
+                                                    <div class="mt5">
+                                                        <span class="name js_user-popover" data-uid="19">
+                                                            <a href="http://fyrestream.com//toseefahmed">Toseef Ahmed</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="feeds-item" style="text-align: center">
+                                            To search more people click here <br>
+                                            <a style="color: #007bff;" href="http://fyrestream.com//people">See More</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="card" style="background: #f0f4f8; border: none;">
+                                <div class="card-header bg-transparent">
+                                    <h5 class="mb-0 ml-2 text-dark suggested-group-custom">Suggested Groups</h5>
+                                </div>
+                                <div class="card-body with-list">
+                                    <ul>
+                                        <li class="feeds-item">
+                                            <div class="data-container">
+                                                <a class="data-avatar" href="http://fyrestream.com//groups/npmjs">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_6f522218992bc5e2fd8b6b6631bc29ab.jpg" alt="pakistan ">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div style="margin-left: 2em;">
+                                                        <span class="name">
+                                                            <a href="http://fyrestream.com//groups/npmjs">pakistan</a>
+                                                        </span>
+
+                                                        <div>1 Members</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="feeds-item">
+                                            <div class="data-container">
+                                                <a class="data-avatar" href="http://fyrestream.com//groups/test">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2021/01/sngine_ef54039290e0507a68d9e04656ceab2d_cropped.jpg" alt="Test">
+                                                </a>
+
+                                                <div class="data-content">
+                                                    <div style="margin-left: 2em;">
+                                                        <span class="name">
+                                                            <a href="http://fyrestream.com//groups/test">Test</a>
+                                                        </span>
+
+                                                        <div>2 Members</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="feeds-item">
+                                            <div class="data-container">
+                                                <a class="data-avatar" href="http://fyrestream.com//groups/grrer">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_876431e9b99de114922ab483cd87059a.jpg" alt="Test Group">
+                                                </a>
+                                                <div class="data-content">
+                                                    <div style="margin-left: 2em;">
+                                                        <span class="name">
+                                                            <a href="http://fyrestream.com//groups/grrer">Test Group</a>
+                                                        </span>
+
+                                                        <div>4 Members</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="feeds-item">
+                                            <div class="data-container">
+                                                <a class="data-avatar" href="http://fyrestream.com//groups/FyrestreamBetaCrew">
+                                                    <img src="http://fyrestream.com//content/uploads/photos/2020/11/sngine_47653300e92b1874b75ddb44b9ce8447_cropped.png" alt="Fyrestream Beta Crew">
+                                                </a>
+
+                                                <div class="data-content">
+                                                    <div style="margin-left: 2em;">
+                                                        <span class="name">
+                                                            <a href="http://fyrestream.com//groups/FyrestreamBetaCrew">Fyrestream Beta Crew</a>
+                                                        </span>
+
+                                                        <div>9 Members</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <button style="margin-bottom: 15px;" class="see-more w-100">
+                                        <a href="http://fyrestream.com//groups"> See More </a>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header bg-transparent">
+                                    <div class="float-right">
+                                        <small>
+                                            <a href="http://fyrestream.com//events">See All</a>
+                                        </small>
+                                    </div>
+                                    <h5 class="mb-0 ml-2 text-dark">Suggested Events</h5>
+                                </div>
+                                <div class="card-body with-list">
+                                    <ul>
+                                        <li class="feeds-item">
+                                            <div class="data-container small"> \
+                                                <a class="data-avatar" href="http://fyrestream.com//events/1">
+                                                    <img src="http://fyrestream.com//content/themes/default/images/blank_event.jpg" alt="hhh">
+                                                </a>
+
+                                                <div class="data-content">
+                                                    <div class="float-right">
+                                                        <button type="button" class="btn btn-sm btn-primary js_interest-event" data-id="1">
+                                                            <i class="fa fa-star mr5"></i>Interested
+                                                        </button>
+                                                    </div>
+
+                                                    <div>
+                                                        <span class="name">
+                                                            <a href="http://fyrestream.com//events/1">hhh</a>
+                                                        </span>
+                                                        <div>1 Interested</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" news-card">
+                            <div class="text-center mini-footer">
+                                <p>© 2020 by Fyrestream.</p>
+                                <a href="#" class="side-border">Advertise?</a>
+                                <a href="#" class="side-border">Help</a>
+                                <a href="#">Privacy</a> <br>
+                                <img src="http://fyrestream.com//content/themes/default/frontend/login/images/fyrestream.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{{--        </div>--}}
     </div>
 
 
@@ -524,45 +695,4 @@
     </div>
 
 
-    <script>
-        $(function () {
-            $(".postSelectionItem").click(function () {
-                $("#postSelection").text($(this).text());
-                $("#privacySelection").val($(this).text());
-            });
-
-            $(".editCommentIcon").click(function () {
-                $("#commentData"+this.id).hide();
-                $("#commentName"+this.id).hide();
-                $("#form"+this.id).addClass("d-block").removeClass('d-none');
-                $("#editComment"+this.id).val($("#commentData"+this.id).text());
-            });
-
-            $(".cancelBtn").click(function () {
-                $("#commentData"+this.id).show();
-                $("#commentName"+this.id).show();
-                $("#form"+this.id).addClass("d-none").removeClass('d-block');
-                $("#editComment"+this.id).val('');
-            });
-
-            $(".editPostIcon").click(function () {
-                $("#postData"+this.id).hide();
-                $("#postform"+this.id).addClass("d-block").removeClass('d-none');
-                $("#editPost"+this.id).val($("#postData"+this.id).text());
-            });
-
-            $(".cancelBtnPost").click(function () {
-                $("#postData"+this.id).show();
-                $("#postform"+this.id).addClass("d-none").removeClass('d-block');
-                $("#editPost"+this.id).val('');
-            });
-
-            $(".commentPostBtn").click(function () {
-                $("#comment"+this.id).focus();
-            });
-        });
-
-
-
-    </script>
 @endsection
